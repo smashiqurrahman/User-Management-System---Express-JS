@@ -1,0 +1,46 @@
+<form class="row g-3 needs-validation" method="POST" action="/adduser" novalidate>
+    <div class="col-6">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="First Name" name="first_name"
+                value="{{this.first_name}}">
+            <label for="floatingInput">First Name</label>
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Last Name" name="last_name"
+                value="{{this.last_name}}">
+            <label for="floatingInput">Last Name</label>
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="Email" name="email"
+                value="{{this.email}}">
+            <label for="floatingInput">Email</label>
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Phone Number" name="phone"
+                value="{{this.phone}}">
+            <label for="floatingInput">Phone Number</label>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="form-floating mb-3">
+            <textarea class="form-control" placeholder="Comment here if you want" id="comments" name="comments"
+                style="height: 200px;">{{this.comments}}</textarea>
+            <label for="floatingInput">Comments</label>
+        </div>
+    </div>
+
+    <div class="col-12 d-grid">
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
+
+</form>
